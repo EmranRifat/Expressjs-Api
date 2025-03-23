@@ -1,6 +1,12 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 5000;
+const products_route = require("./src/routes/products");
+const connectDB = require("./db/connect");
+
+app.use("/api/products", products_route);
+
+connectDB(); // Connect to MongoDB
 
 
 const jsonData = {
@@ -12,11 +18,11 @@ const jsonData = {
   ],
 };
 
- 
 
+ 
   // Middleware to validate token
   const varifyToken = (req, res, next) => {
-    const authHeader = req.header("Authorization"); // Get token from headers
+    const authHeader = req.header("Authorization"); 
     console.log("Received Authorization Header:", authHeader); 
     if (!authHeader) {
       return res.status(401).json({ message: "Unauthorized: No token provided" });
@@ -25,17 +31,30 @@ const jsonData = {
     const token = authHeader.startsWith("Bearer ") ? authHeader.split(" ")[1] : authHeader;
     // console.log("Extracted Token:", token); 
 
+    // Check if token is valid
     const validToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
 
     if (token !== validToken) {
-      return res.status(403).json({ message: "Forbidden: Invalid token" });
+      return res.status(403).json({ message: "Forbidden: Invalid token..!" });
     }
-    next(); 
-  };
+    next();
+    };
+
+
+  app.get('/', (req, res) => {
+    res.send('welcome to NodeJS World..!');
+   })
+
+ 
+
+   app.get("/home", (req, res) => {
+    res.sendFile(__dirname + "/index.html");
+   }
+   );
 
 
 
-app.get("/api/data", varifyToken,(req, res) => {
+  app.get("/api/data", varifyToken,(req , res) => {
   // const jsonData = {
   //   message: "Success",
   //   data: [
@@ -45,11 +64,10 @@ app.get("/api/data", varifyToken,(req, res) => {
   //   ],
   // };
   res.json(jsonData);
-});
+  });
 
 
-
-
-app.listen(port, () => {
+  
+ app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
-});
+ });
