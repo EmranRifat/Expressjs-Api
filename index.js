@@ -23,13 +23,13 @@ const jsonData = {
   // Middleware to validate token
   const varifyToken = (req, res, next) => {
     const authHeader = req.header("Authorization"); 
-    console.log("Received Authorization Header:", authHeader); 
+    // console.log("Received Authorization Header:", authHeader); 
     if (!authHeader) {
       return res.status(401).json({ message: "Unauthorized: No token provided" });
     }
     // Extract token (Check if it starts with "Bearer")
     const token = authHeader.startsWith("Bearer ") ? authHeader.split(" ")[1] : authHeader;
-    // console.log("Extracted Token:", token); 
+    // console.log("Extracted Token:", authHeader); 
 
     // Check if token is valid
     const validToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
@@ -39,6 +39,8 @@ const jsonData = {
     }
     next();
     };
+
+
 
 
   app.get('/', (req, res) => {
