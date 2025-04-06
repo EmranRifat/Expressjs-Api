@@ -1,1 +1,37 @@
-ECHO is on.
+[
+  {
+    "name": "Wireless Mouse",
+    "price": 25.99,
+    "description": "A comfortable ergonomic wireless mouse with long battery life.",
+    "category": "Electronics",
+    "imageUrl": "https://example.com/images/mouse.jpg"
+  },
+  {
+    "name": "Bluetooth Headphones",
+    "price": 49.99,
+    "description": "High-quality over-ear headphones with noise cancellation.",
+    "category": "Electronics",
+    "imageUrl": "https://example.com/images/headphones.jpg"
+  },
+  {
+    "name": "Cotton T-Shirt",
+    "price": 15.0,
+    "description": "Soft and breathable cotton t-shirt available in various colors.",
+    "category": "Clothing",
+    "imageUrl": "https://example.com/images/tshirt.jpg"
+  },
+  {
+    "name": "Water Bottle",
+    "price": 10.5,
+    "description": "Durable stainless steel water bottle with 1L capacity.",
+    "category": "Home & Kitchen",
+    "imageUrl": "https://example.com/images/bottle.jpg"
+  },
+  {
+    "name": "Gaming Keyboard",
+    "price": 65.0,
+    "description": "RGB mechanical gaming keyboard with blue switches.",
+    "category": "Electronics",
+    "imageUrl": "https://example.com/images/keyboard.jpg"
+  }
+]
