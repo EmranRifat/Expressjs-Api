@@ -42,7 +42,6 @@ const jsonData = {
 
 
 
-
   app.get('/', (req, res) => {
     res.send('welcome to NodeJS World..!');
    })

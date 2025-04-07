@@ -8,9 +8,10 @@ const uri = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PAS
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(uri); // 🔥 No deprecated options
+    await mongoose.connect(uri); 
     console.log("MongoDB connected successfully 🔥");
-  } catch (error) {
+  } 
+  catch (error) {
     console.error("MongoDB connection error:", error);
     process.exit(1);
   }
