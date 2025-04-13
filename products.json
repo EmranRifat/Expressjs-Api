@@ -31,6 +31,16 @@
       "name": "John Doe",
       "email": "john@example.com",
       "password": "anothersecurepassword"
+    },
+    {
+      "name": "Micle Loe",
+      "email": "Micle@example.com",
+      "password": "anothersecurepassword"
+    },
+    {
+      "name": "Charlse Babze",
+      "email": "Charlse@example.com",
+      "password": "anothersecurepassword"
     }
   ]
 }
