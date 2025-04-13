@@ -9,6 +9,7 @@ const data = require("./products.json");
 const start = async () => {
 
   try {
+    
     await connectDB(); 
     
     // Clear existing records (optional)
@@ -19,7 +20,7 @@ const start = async () => {
     await User.create(data.users);
 
     console.log("✅ Products and Users inserted successfully!");
-    process.exit(0); // Exit cleanly
+    process.exit(0);
   } 
   
   
