@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 5000;
+const users_route = require("./src/routes/products");
 const products_route = require("./src/routes/products");
+
 const connectDB = require("./db/connect");
 
 
@@ -66,9 +68,13 @@ const jsonData = {
   res.json(jsonData);
   });
 
-app.use("/api/products", products_route);
+
+
+  app.use("/api/users", users_route);
+  app.use("/api/product", products_route);
 
   
+
  app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
  });

@@ -1,10 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-const { GetAllProducts, GetAllProductsTesting } = require("../../controllers/products");
+const { GetAllUsers, GetAllProducts, GetAllProductsTesting } = require("../../controllers/products");
+
 
 // Correct route definitions
-router.get("/", GetAllProducts);
+router.get("/", GetAllUsers);
+router.get("/products", GetAllProducts);
 router.get("/testing", GetAllProductsTesting);
+
 
 module.exports = router;

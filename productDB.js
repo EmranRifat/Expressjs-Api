@@ -3,17 +3,16 @@ const Product = require("./models/product");
 const User = require("./models/user");
 const data = require("./products.json");
 
-
-
 const start = async () => {
 
   try {
     
     await connectDB(); 
-    
     // Clear existing records (optional)
     await Product.deleteMany();
     await User.deleteMany();
+
+
     // Insert both products and users
     await Product.create(data.products);
     await User.create(data.users);

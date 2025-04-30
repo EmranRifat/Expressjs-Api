@@ -14,13 +14,57 @@
       "description": "Over-ear headphones with noise cancellation.",
       "category": "Electronics",
       "imageUrl": "https://example.com/images/headphones.jpg"
+    },
+    {
+      "name": "Smartphone Stand",
+      "price": 12.99,
+      "description": "Adjustable aluminum stand for smartphones and tablets.",
+      "category": "Accessories",
+      "imageUrl": "https://example.com/images/stand.jpg"
+    },
+    {
+      "name": "Gaming Keyboard",
+      "price": 79.99,
+      "description": "Mechanical RGB gaming keyboard with customizable keys.",
+      "category": "Electronics",
+      "imageUrl": "https://example.com/images/keyboard.jpg"
+    },
+    {
+      "name": "Portable Charger",
+      "price": 34.50,
+      "description": "10000mAh portable power bank with fast charging.",
+      "category": "Electronics",
+      "imageUrl": "https://example.com/images/charger.jpg"
+    },
+    {
+      "name": "Stainless Steel Water Bottle",
+      "price": 19.99,
+      "description": "Insulated water bottle, keeps drinks hot or cold.",
+      "category": "Home & Kitchen",
+      "imageUrl": "https://example.com/images/bottle.jpg"
+    },
+    {
+      "name": "LED Desk Lamp",
+      "price": 29.95,
+      "description": "Dimmable LED desk lamp with touch control and USB port.",
+      "category": "Home & Office",
+      "imageUrl": "https://example.com/images/lamp.jpg"
+    },
+    {
+      "name": "Fitness Tracker",
+      "price": 59.99,
+      "description": "Smart fitness tracker with heart rate and sleep monitor.",
+      "category": "Wearables",
+      "imageUrl": "https://example.com/images/fitness-tracker.jpg"
     }
-
-
-
-
-    
+ 
   ],
+
+
+
+  
+  
+  
   "users": [
     {
       "name": "Alice Bili",
