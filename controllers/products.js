@@ -12,7 +12,20 @@ const allUserData= await users.find({});
 
 const GetAllProducts = async (req, res) => {
 
-const allProductsData= await products.find({});
+const {category,name}= req.query;
+const queryObject={};
+
+if(category){
+    queryObject.category=category;
+}
+if(name){
+    queryObject.name={$regex:name, $options:"i"};
+     console.log(queryObject);
+}
+
+console.log(queryObject);
+
+const allProductsData= await products.find(queryObject);
     // res.status(200).json({ msg: "Get All Products...." });
     res.status(200).json({allProductsData });
     
@@ -20,7 +33,11 @@ const allProductsData= await products.find({});
 
 
 
-const GetAllProductsTesting = async (req, res) => {
+const GetAllProductsTesting = async (req, res) => 
+{
+    
+    // const allProducts= await products.find(queryObject);
+
     res.status(200).json({ msg: "Get All Products Testing...." });
 }
 

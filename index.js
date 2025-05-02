@@ -20,7 +20,6 @@ const jsonData = {
 };
 
 
- 
   // Middleware to validate token
   const varifyToken = (req, res, next) => {
     const authHeader = req.header("Authorization"); 
@@ -34,6 +33,7 @@ const jsonData = {
 
     // Check if token is valid
     const validToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
+
 
     if (token !== validToken) {
       return res.status(403).json({ message: "Forbidden: Invalid token..!" });
