@@ -1,65 +1,88 @@
 
 {
-  "products": [
+  "products":[
     {
-      "name": "Wireless Mouse",
-      "price": 25.99,
-      "description": "A comfortable ergonomic wireless mouse.",
-      "category": "Electronics",
-      "imageUrl": "https://example.com/images/mouse.jpg"
+      "_id": "680c76b91cdac7f972b2edd2",
+      "name": "iPhone 13",
+      "price": 799.00,
+      "description": "iPhone 13 with A15 Bionic chip, dual-camera system, and 5G.",
+      "category": "Smartphones",
+      "company": "apple"
     },
     {
-      "name": "Bluetooth Headphones",
-      "price": 49.99,
-      "description": "Over-ear headphones with noise cancellation.",
-      "category": "Electronics",
-      "imageUrl": "https://example.com/images/headphones.jpg"
+      "_id": "680c76b91cdac7f972b2edd3",
+      "name": "iPhone 14 Pro",
+      "price": 999.00,
+      "description": "iPhone 14 Pro with Dynamic Island and ProMotion display.",
+      "category": "Smartphones",
+      "company": "apple"
     },
     {
-      "name": "Smartphone Stand",
-      "price": 12.99,
-      "description": "Adjustable aluminum stand for smartphones and tablets.",
-      "category": "Accessories",
-      "imageUrl": "https://example.com/images/stand.jpg"
+      "_id": "680c76b91cdac7f972b2edd4",
+      "name": "Samsung Galaxy S23",
+      "price": 849.99,
+      "description": "Flagship Samsung phone with Snapdragon 8 Gen 2 and 120Hz AMOLED display.",
+      "category": "Smartphones",
+      "company": "samsung"
     },
     {
-      "name": "Gaming Keyboard",
-      "price": 79.99,
-      "description": "Mechanical RGB gaming keyboard with customizable keys.",
-      "category": "Electronics",
-      "imageUrl": "https://example.com/images/keyboard.jpg"
+      "_id": "680c76b91cdac7f972b2edd5",
+      "name": "Samsung Galaxy A54",
+      "price": 399.99,
+      "description": "Mid-range Samsung device with long battery life and triple camera setup.",
+      "category": "Smartphones",
+      "company": "samsung"
     },
     {
-      "name": "Portable Charger",
-      "price": 34.50,
-      "description": "10000mAh portable power bank with fast charging.",
-      "category": "Electronics",
-      "imageUrl": "https://example.com/images/charger.jpg"
+      "_id": "680c76b91cdac7f972b2edd6",
+      "name": "OnePlus 11",
+      "price": 699.00,
+      "description": "OnePlus flagship phone with Snapdragon 8 Gen 2 and 100W fast charging.",
+      "category": "Smartphones",
+      "company": "oneplus"
     },
     {
-      "name": "Stainless Steel Water Bottle",
-      "price": 19.99,
-      "description": "Insulated water bottle, keeps drinks hot or cold.",
-      "category": "Home & Kitchen",
-      "imageUrl": "https://example.com/images/bottle.jpg"
+      "_id": "680c76b91cdac7f972b2edd7",
+      "name": "OnePlus Nord CE 3 Lite",
+      "price": 249.00,
+      "description": "Budget-friendly OnePlus phone with 108MP camera and 67W charging.",
+      "category": "Smartphones",
+      "company": "oneplus"
     },
     {
-      "name": "LED Desk Lamp",
-      "price": 29.95,
-      "description": "Dimmable LED desk lamp with touch control and USB port.",
-      "category": "Home & Office",
-      "imageUrl": "https://example.com/images/lamp.jpg"
+      "_id": "680c76b91cdac7f972b2edd8",
+      "name": "Xiaomi Redmi Note 12",
+      "price": 219.00,
+      "description": "Affordable Xiaomi phone with AMOLED screen and 50MP camera.",
+      "category": "Smartphones",
+      "company": "xiaomi"
     },
     {
-      "name": "Fitness Tracker",
-      "price": 59.99,
-      "description": "Smart fitness tracker with heart rate and sleep monitor.",
-      "category": "Wearables",
-      "imageUrl": "https://example.com/images/fitness-tracker.jpg"
+      "_id": "680c76b91cdac7f972b2edd9",
+      "name": "Xiaomi 13 Pro",
+      "price": 899.00,
+      "description": "Flagship Xiaomi with Leica cameras and Snapdragon 8 Gen 2.",
+      "category": "Smartphones",
+      "company": "xiaomi"
+    },
+    {
+      "_id": "680c76b91cdac7f972b2edda",
+      "name": "Google Pixel 7",
+      "price": 599.00,
+      "description": "Google's premium phone with Tensor chip and clean Android experience.",
+      "category": "Smartphones",
+      "company": "google"
+    },
+    {
+      "_id": "680c76b91cdac7f972b2eddb",
+      "name": "Google Pixel 7a",
+      "price": 499.00,
+      "description": "Affordable Pixel phone with AI camera features and long software support.",
+      "category": "Smartphones",
+      "company": "google"
     }
- 
   ],
-
+  
 
 
   

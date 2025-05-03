@@ -19,7 +19,7 @@ const productSchema = new Schema({
     required: true,
   },
 
-  imageUrl: {
+  company: {
     type: String,
     required: true,
   },

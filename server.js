@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 5000;
-const users_route = require("./src/routes/products");
-const products_route = require("./src/routes/products");
-
+const users_route = require("./src/routes/productRoute");
+const products_route = require("./src/routes/productRoute");
+const productRoutes = require("./src/routes/productRoute");
+const userRoutes = require("./src/routes/userRoute");
+const testRoutes = require("./src/routes/testRoute");
 const connectDB = require("./db/connect");
 
 
@@ -69,11 +71,13 @@ const jsonData = {
   });
 
 
-
-  app.use("/api/users", users_route);
-  app.use("/api/product", products_route);
+// API Routes
+app.use("/api/products", productRoutes); // http://localhost:5000/api/products/
+app.use("/api/users", userRoutes);  // http://localhost:5000/api/users/   
+app.use("/api/test", testRoutes);  // http://localhost:5000/api/test/   
 
   
+
 
  app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
